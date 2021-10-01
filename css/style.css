@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #424141;
+}
+.container {
+    width: 650px;
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 6px 8px 20px #4d484c;
+    display: block;
+    position: relative;
+}
+.clock-container {
+    width: 420px;
+    height: 120px;
+    background-color: #375671d9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 6px 8px 20px #4d484c;
+}
+.colon {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 18px;
+}
+.clock-container p{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container .bottom{
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    background-color: #aaa4b2;
+}
+.progress-bar{
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #615770;
+    transition: .3s;
+}
